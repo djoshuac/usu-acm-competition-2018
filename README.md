@@ -6,34 +6,46 @@ Each problem should have:
 
 - a description
 - an estimated difficulty level
-- 4-6 test cases
+- 4 or more test cases
 - a solution in at least C++, Python, and Java
 
-Put each problem in it's own directory named with following conventions:
+Put each problem in a directory named with following conventions:
 
     snake_case_name-<difficulty level in minutes>
 
 For example, `best_words-20` is a problem named "Best Words" that has a
 difficulty of 20 minutes.
 
-### Test cases format (for Hackerrank zip upload)
+Each problem should have two subdirectories: `tests` and `solutions`
 
-Test cases for each problem should be stored in a subdirectory called `tests`.
-Within that subdirectory there should be two folders `input` and `output`.
+### `tests`
 
-All the inputs for each test cases should be stored in the `input` directory
+Store the inputs and outputs for each test case in `<PROBLEM>\tests\input` and
+`<PROBLEM>\tests\output`
+
+All the inputs for the problem should be stored in the `<PROBLEM>\tests\input` directory
 following this format:
 
 > inputXX.txt
 
 *Where `X` is a digit from 0-9*
 
-All the outputs for each test cases should be stored in the `output` directory
+All the outputs for the problem should be stored in the `<PROBLEM>\tests\output` directory
 following this format:
 
 > outputXX.txt
 
 *Where `XX` mirrors the respective input*
+
+### `solutions`
+
+We need sample solutions using at least C++, Python, and Java. This is to ensure that a
+solution is possible using any of these standard programming languages. A person
+who uses an unverified language does so at their own discretion.
+
+This directory must have three subdirectories: `C++`, `Python`, and `Java`. Within
+each, store the code for the solution. (Multiple solutions are encouraged! Especially
+  if they follow different strategies. Thus name solution accordingly.)
 
 --------------
 
@@ -44,15 +56,15 @@ executable (TODO write a script that automates this for every test case):
 
 C++
 
-    cat input00.txt | ./solution
+    cat tests/input/input00.txt | ./solutions/C++/solution
 
 Python
 
-    cat input00.txt | python solution.py
+    cat input00.txt | python solutions/Python/solution.py
 
 Java
 
-    cat input00.txt | java Solution
+    cat input00.txt | java ./solutions/Java/Solution
 
 ----------------
 
@@ -61,13 +73,14 @@ Java
 We want a wide variety of problems. There should be enough easy problems that
 CS1 students will be able to have a good time. There should be enough medium
 difficulty problems that CS3 students have a good time. There should be enough
-hard problems, so that people who actually invest themselves have a good time.
+hard problems, so that people who deeply invest themselves have a good time.
 
 Gauge the difficulty of problems in the estimated number of minutes that
 it would take **one person** to solve the question. For example:
 
 > If a problem takes one person 25 minutes, it has a difficulty of 25
 
-Time Estimates should be made under the assumption that a CS3 Student is attempting the problem.
+Time Estimates should be made under the assumption that a post-CS3 Student is
+attempting the problem.
 
-_NOTE: We need to make sure we don't overestimate or underestimate difficulty_
+_NOTE: We need to make sure that we don't overestimate or underestimate difficulty_
