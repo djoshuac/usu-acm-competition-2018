@@ -1,0 +1,14 @@
+13
+    <name> Leon </name>
+    <phone> 254-982-2866 </phone>
+    <email> filthyBannanaPeel@evil.io </email>
+    <attributes> two eyes and glasses </attributes>
+    <apartment> bannana6 hole 3 </apartment>
+    <personalHistory>
+        - Carl was the first on the scene after the theft of the smaller vegas effle tower
+        - Carl provided the test fart that was used in production of the fart gun
+        - Calrl personally taste tested the cookie bots to ensure there chocolately goodness
+        - Carls banna puding has won the pudding of the month award at the company cookoff
+        - Carl really hates the name carl, he prefers the name "snazzy bannana fingers"
+    </personalHistory>
+</minion>
