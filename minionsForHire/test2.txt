@@ -1,0 +1,85 @@
+84
+<minionData>
+    <demolitionCrew>
+        <teamA>
+            <minion>
+                <name> Carl </name>
+                <phone> 324-123-8237 </phone>
+                <email> bannannaLover6@minionMail.co </email>
+                <attributes> two eyes and glasses </attributes>
+                <apartment> bannana6 hole 3 </apartment>
+                <personalHistory>
+                    - Carl was the first on the scene after the theft of the smaller vegas effle tower
+                    - Carl provided the test fart that was used in production of the fart gun
+                    - Calrl personally taste tested the cookie bots to ensure there chocolately goodness
+                    - Carls banna puding has won the pudding of the month award at the company cookoff
+                    - Carl really hates the name carl, he prefers the name "snazzy bannana fingers"
+                </personalHistory>
+            </minion>
+            <minion>
+                <name> Steve </name>
+                <phone> 983-846-1232 </phone>
+                <email> bannannaFiend@evilhenchman.biz </email>
+                <attributes> two eyes and glasses </attributes>
+                <apartment> bannana2 hole 51 </apartment>
+                <personalHistory>
+                    - Steve is newish
+                </personalHistory>
+            </minion>
+            <minion>
+                <name> Albert </name>
+                <phone> 324-123-8237 </phone>
+                <email> bannannaLover6@minionMail.co </email>
+                <attributes> two eyes and glasses </attributes>
+                <apartment> bannana6 hole 3 </apartment>
+                <personalHistory>
+                    - Albert personally tested the fart gun
+                    - Albert banna puding has won the pudding of the month award 3 months ago at the company cookoff
+                </personalHistory>
+            </minion>
+            <minion>
+                <name> Leon </name>
+                <phone> 254-982-2866 </phone>
+                <email> filthyBannanaPeel@evil!io </email>
+                <attributes> two eyes and glasses </attributes>
+                <apartment> bannana6 hole 3 </apartment>
+                <personalHistory>
+                    - Carl was the first on the scene after the theft of the smaller vegas effle tower
+                    - Carl provided the test fart that was used in production of the fart gun
+                    - Calrl personally taste tested the cookie bots to ensure there chocolately goodness
+                    - Carls banna puding has won the pudding of the month award at the company cookoff
+                    - Carl really hates the name carl, he prefers the name "snazzy bannana fingers"
+                </personalHistory>
+            </minion>
+        </teamA>
+        <teamB>
+            <minion>
+                <name> Hugh </name>
+                <phone> 324-123-8237 </phone>
+                <email> bannannaLover6@minionMail.co </email>
+                <attributes> one eyes and glasses </attributes>
+                <apartment> bannana8 hole 32 </apartment>
+                <personalHistory>
+                    - Hugh was the first on the scene after the theft of the smaller vegas effle tower
+                    - Hugh provided the test fart that was used in production of the fart gun
+                    - Hugh personally taste tested the cookie bots to ensure there chocolately goodness
+                    - Hugh banna puding has won the pudding of the month award at the company cookoff
+                    - Hugh really hates the name carl, he prefers the name "the one the only bannana"
+                </personalHistory>
+            </minion>
+            <minion>
+                <name> Jim </name>
+                <phone> 324-648-7931 </phone>
+                <email> bannannaLover6@minionMail.co </email>
+                <attributes> one eyes and 3 hairs </attributes>
+                <apartment> bannana1 hole 14 </apartment>
+                <personalHistory>
+                    - Jim was the first on the scene after the theft of the smaller vegas effle tower
+                    - Jim provided the test fart that was used in production of the fart gun
+                    - Jim personally taste tested the cookie bots to ensure there chocolately goodness
+                    - Jim banna puding has won the pudding of the month award at the company cookoff
+                </personalHistory>
+            </minion>
+        </teamB>
+    </demolitionCrew>
+</minionData>
