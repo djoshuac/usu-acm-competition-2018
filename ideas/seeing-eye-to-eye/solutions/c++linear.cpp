@@ -16,6 +16,11 @@ T abs_diff(T a, T b) {
   return a > b ? a - b : b - a;
 }
 
+template <typename T>
+T min_diff(T a, T b) {
+  return a > b ? b : a;
+}
+
 int main() {
   long n, m;
   cin >> n >> m;
@@ -29,14 +34,8 @@ int main() {
     while (j <= m && foos[i] > bars[j]) {
       j++;
     }
-
-    auto d = abs_diff(foos[i], bars[j-1]); // check the largest bar less than the ith foo
-    d_min = d < d_min ? d : d_min;
-
-    if (j != m) {
-      d = abs_diff(foos[i], bars[j]); // if not at the end, check the first bar larger than the ith foo
-      d_min = d < d_min ? d : d_min;
-    }
+    d_min = j > 0 ? min(d_min, abs_diff(foos[i], bars[j-1])) : d_min;
+    d_min = j < m ? min(d_min, abs_diff(foos[i], bars[j])) : d_min;
   }
 
   cout << d_min << endl;
