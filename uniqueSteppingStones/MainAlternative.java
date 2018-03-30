@@ -11,50 +11,37 @@ public final class MainAlternative {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        List<List<Integer>> list = new ArrayList<>();
+        List<Set<Integer>> list = new ArrayList<>(m);
+
         for(int i = 0; i<m; i++){
-            list.add(new ArrayList<>());
+            list.add(new HashSet<>());
         }
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i<n; i++){
             st = new StringTokenizer(br.readLine());
-            for(int j = 0; j < m; j++){
+            for(int j = 0; j<m; j++){
                 int val = Integer.parseInt(st.nextToken());
                 list.get(j).add(val);
             }
         }
 
-        pw.println(containsUniquePathRecursive(list, m) ? "Yes" : "No");
+        pw.println(containsUniquePath(list, 0, new HashSet<Integer>()) ? "Yes" : "No");
         pw.close();
     }
-    
-    public static boolean containsUniquePathRecursive(List<List<Integer>> matchList, int targetLen){
-        for(int i = 0; i<matchList.get(0).size(); i++){
-            Set<Integer> set = new HashSet<>();
-            set.add(matchList.get(0).get(i));
-            if(checkForUniquePathRecurseHelper(matchList, set, 1, targetLen))
-                return true;
-            set.remove(matchList.get(0).get(i));
-        }
-        return false;
-    }
 
-    public static boolean checkForUniquePathRecurseHelper(List<List<Integer>> list, Set<Integer> set, int index, int targetSetLen){
-        if(index >= list.size())
-            return set.size() == targetSetLen;
+    public static boolean containsUniquePath(List<Set<Integer>> list, int row, Set<Integer> set){
+        if(row >= list.size())
+            return set.size() == list.size();
 
-        boolean res = false;
-        for(int i = 0; i<list.get(index).size(); i++){
-            int currVal = list.get(index).get(i);
-            if(set.contains(currVal))
+        for(int i : list.get(row)){
+            if(set.contains(i))
                 continue;
-            set.add(currVal);
-            if(set.size() == targetSetLen)
+            set.add(i);
+            if(containsUniquePath(list, row+1, set))
                 return true;
-            res = checkForUniquePathRecurseHelper(list, set, index+1, targetSetLen);
-            set.remove(currVal);
+            set.remove(i);
         }
 
-        return set.size() == targetSetLen || res;
+        return false;
     }
 }
