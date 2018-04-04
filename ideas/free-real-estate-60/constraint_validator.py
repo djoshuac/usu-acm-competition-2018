@@ -18,6 +18,6 @@ if __name__ == "__main__":
         if h[1] > 10**6 or h[1] < 0:
             print(h, "failed X constraint")
             raise "Failed size constraint"
-        if h[2] > 20 or h[2] < 0:
+        if h[2] > 10 or h[2] < 0:
             print(h, "failed X constraint")
             raise "Failed size constraint"

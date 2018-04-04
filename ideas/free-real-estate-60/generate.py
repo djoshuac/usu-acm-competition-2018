@@ -1,6 +1,7 @@
 from random import randint
 
-n = 10 ** 6
+n = 10 ** 5 * 13
+# n = 10 ** 2
 already = set()
 already.add((-1, -1, -1))
 
@@ -11,7 +12,7 @@ def random_bathrooms():
     return randint(0, 10**6)
 
 def random_pools():
-    return randint(0, 20)
+    return randint(0, 10)
 
 print(n)
 for _ in range(n):

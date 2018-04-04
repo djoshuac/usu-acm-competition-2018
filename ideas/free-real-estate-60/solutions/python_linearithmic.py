@@ -1,6 +1,4 @@
-from collections import namedtuple
-
-MAX_POOLS = 20
+MAX_POOLS = 10
 b, t, p = (0, 1, 2)
 
 def solution(market):
